@@ -1,6 +1,8 @@
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP()
+mcp = FastMCP(
+    name="Arithmetic MCP Server"
+)
 
 @mcp.tool()
 def add(a: int, b: int) -> int:
